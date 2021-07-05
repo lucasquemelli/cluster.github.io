@@ -45,5 +45,11 @@ Foram testados 7 tipos de métodos, que podem ser vistos nas figuras abaixo (Den
 ![image](https://user-images.githubusercontent.com/81119854/124511029-7d85d100-ddab-11eb-877e-5f6585d2adc9.png)
 ![image](https://user-images.githubusercontent.com/81119854/124511074-97bfaf00-ddab-11eb-974a-5fb43e2d4a55.png)
 
+A construção de dendrogramas para cada observação (para os períodos) não é interessante nesse caso porque, após a limpeza de dados, são gerados períodos de tempo
+que não se relacionam, e a análise da combinação desses períodos se torna inapropriada por não conter sentido físico. 
+
+O que pode ser concluído dessa análise é que determinados períodos possuem valores próximos das variáveis medidas. Contudo, ainda assim, muito não pode ser concluído já que a combinação traz períodos sequenciais como 2 e 3, 5 e 6, 14 e 15. 
+
+Observações sequenciais em processos contínuos geralmente estão relacionadas (alta similaridade) se não há erro sistemático. Teria um sentido físico se, por exemplo, as observações fossem companhias diferentes (observação não contínua, diferentes conjuntos de dados).
 
 
