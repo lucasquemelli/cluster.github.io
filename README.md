@@ -113,6 +113,16 @@ TI0201 (temperatura na entrada da câmara 1) – PI0215 (pressão na saída da s
 
 # Agrupamento das variáveis
 
-Ao final, as variáveis foram agrupadas em 4 grupos com distâncias similares. Os comandos para o agrupamento, para a geração do dendrograma e para o armazenamento da identificação dos grupos em uma variável (goups.var) podem ser vistos na Figura 11.
+Ao final, as variáveis foram agrupadas em 4 grupos com distâncias similares. Os comandos para o agrupamento, para a geração do dendrograma e para o armazenamento da identificação dos grupos em uma variável (goups.var) podem ser vistos abaixo:
 
+![image](https://user-images.githubusercontent.com/81119854/124513008-259d9900-ddb0-11eb-907d-74410e6e5785.png)
+![image](https://user-images.githubusercontent.com/81119854/124513035-3948ff80-ddb0-11eb-9422-3a24a4c11196.png)
+
+No primeiro grupo, foram agrupadas as variáveis da seção de clivagem (reação), a vazão de vapor no evaporador e variáveis de pressão e temperatura dos condensadores. Este agrupamento foi adequado porque relaciona variáveis em seções subsequentes e, por isso, relacionadas no processo. A seção de evaporação influencia a seção de reação que, por sua vez, influencia a seção dos condensadores.
+
+No segundo grupo, foram agrupadas variáveis da seção de clivagem, a pressão que sai dos condensadores que está ligada à clivagem e uma temperatura no segundo trocador (seção de condensadores). As variáveis da clivagem e a pressão dos condensadores que está ligada à clivagem estão relacionadas e podem ser reunidas no mesmo grupo. Entretanto, temperatura no segundo trocador (TC0510) não aparenta ter sentido físico já que está no trocador intermediário, isto é, não é influenciada diretamente pelo grupo de clivagem e nem pela variável do condensador que está ligada à clivagem. Portanto, TC0510 parece não pertencer ao grupo em questão.
+
+O terceiro grupo contém as seguintes variáveis: temperatura na entrada da câmara 3 (TI0204), temperatura na saída do trocador 1 (TC0508), temperatura na saída da serpentina 1 (TI0211) e vazão de gás natural (FI0446). Existem 3 variáveis que estão relacionadas por fazerem parte da seção de clivagem (TI0204, TI0211 e FI0446). A temperatura na saída do trocador 1 não tem relação direta, mas pode estar relacionada por fazer parte de uma seção subsequente.
+
+Pode ser observado no quarto grupo que este é composto por dois grupos menores. O primeiro deles possui as vazões de ácido acético que sai dos condensadores e de anidrido acético. As duas vazões estão relacionadas porque fazem parte da mesma seção (absorção) e uma é diferença da outra, isto é, a quantidade de produto formado depende da quantidade de ácido acético que não foi convertido na seção de reação. O outro grupo menor é formado pelas vazões de ácido acético e de catalisador (na seção de evaporação), pela temperatura na saída do trocador 3 (relacionada com as vazões de ácido acético que sai dos condensadores e de anidrido acético), pelas pressões nas serpentinas 2 e 3 e pela pressão no evaporador. Este grupo é mais distinto e complexo do que os outros, mas quando visto com atenção, pode ser concluído que a pressão no evaporador influencia as pressões na seção de clivagem (serpentinas). Além disso, a vazão de ácido acético (entrada) no evaporador está relacionada tanto com a vazão de ácido acético (reagente não convertido) que sai dos condensadores quanto que a vazão de produto de anidrido formado (saída), porque a partir da primeira que se obtém as duas últimas.
 
