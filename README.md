@@ -69,9 +69,50 @@ Pela figura, pode ser concluído que o número de grupos é 3. Assim, foi feita 
 
 ![image](https://user-images.githubusercontent.com/81119854/124511995-c3dc2f80-ddad-11eb-9fcc-be9eb03b43a0.png)
 
+Para salvar os valores (do DataFrame) que foram exibidos no Console do RStudio em um arquivo csv, pode ser utilizado o seguinte comando no R:
+write.csv2(dadosC.k,file="cluster_agrupados.csv",row.names=F)
+
 Após a inserção do código de agrupamento, os grupos em cada variáveis foram organizados e exibidos na seção ‘adicionar clusters nas observações’. Os grupos com seus respectivos valores médios podem ser vistos abaixo:
 
 ![image](https://user-images.githubusercontent.com/81119854/124512217-39480000-ddae-11eb-8c60-7b77ea4fcb77.png)
 
+Para visualizar todos os pontos dos grupos de todas as variáveis do processo foi utilizada a função plot para gerar os gráficos da relação de duas variáveis. No entanto, devido ao grande número de combinações, foram selecionados os gráficos com os melhores agrupamentos – alta distância entre os grupos e baixa distância entre os pontos do mesmo grupo. 
+
+O Comando no R para geração dos gráficos pode ser visto abaixo:
+
+![image](https://user-images.githubusercontent.com/81119854/124512416-ae1b3a00-ddae-11eb-9d84-116fb2640626.png)
+
+Os gráficos formados podem ser vistos abaixo. O número de gráficos apresentados é 8, que corresponde aos melhores agrupamentos. Foram excluídos da exibição os grupos em que os pontos se sobrepunham, não sendo possível a identificação de uma região específica para definição do grupo. 
+
+A ordem em que as relações são apresentada é da esquerda para a direita, começando no topo e indo até em baixo.
+
+![image](https://user-images.githubusercontent.com/81119854/124512532-f9354d00-ddae-11eb-8f01-7fb41b286f1f.png)
+![image](https://user-images.githubusercontent.com/81119854/124512547-05210f00-ddaf-11eb-942a-44c268c66c1f.png)
+![image](https://user-images.githubusercontent.com/81119854/124512564-10743a80-ddaf-11eb-92b4-5edca7711bb4.png)
+![image](https://user-images.githubusercontent.com/81119854/124512574-19650c00-ddaf-11eb-819f-5ad9702d8658.png)
+
+# Análise das relações entre as variáveis
+
+PI0102 (pressão no evaporador) – TI0201 (temperatura na entrada da câmara 1): esta relação tem sentido físico porque fazem partes de seções subsequentes e
+pressão e temperatura são duas grandezas físicas diretamente proporcional, conforme Lei dos Gases (reais e ideais).
+
+PI0102 (pressão no evaporador) – PI0216 (pressão na saída da serpentina 3): esta relação também tem sentido físico por se tratar de variáveis em seções subsequentes. É possível que a pressão de uma dada seção seja regulada a partir da pressão da seção anterior por causa do fluxo de gases entre essas seções.
+
+FC0104 (vazão de ácido acético) – TI0201 (temperatura na entrada da câmara 1): esta relação também tem sentido físico porque a vazão de ácido acético é a variável que alimenta o processo e a temperatura na entrada da seção de clivagem é dependente da vazão de alimentação, isto é, quanto maior a vazão, maior a temperatura deve ser para iniciar o preparo do reagente para a temperatura de trabalho.
+
+FC0104 (vazão de ácido acético) – TI0205 (temperatura na saída da câmara 1): esta relação tem sentido físico e está relacionada com o item anterior. A temperatura de saída da câmara 1 está diretamente relacionada com a temperatura de entrada na câmara 1 que, por sua vez, está relacionada com a vazão de ácido acético.
+
+FC0104 (vazão de ácido acético) – PI0216 (pressão na saída da serpentina 3): esta relação tem sentido físico porque a vazão de ácido acético influencia a pressão de saída da seção de clivagem na tentativa de minimizar os produtos não condensáveis. Quanto maior a vazão de ácido acético, maior a possibilidade de produtos não condensáveis e maior deve ser a pressão para evitar que produtos gasosos sejam formados (Le Chatelier).
+
+FC0108 (vazão de catalisador) – TI0201 (temperatura na entrada da câmara 1): embora o catalisador não seja consumido no processo, a sua presença é fundamental pra aumentar a taxa de reação química. Por isso, a vazão de catalisador deve influenciar a temperatura na entrada da seção de clivagem (reação) porque mesmo na ausência de catalisador, a temperatura é fundamental para promover uma reação por meio de energia de ativação. Isto é, deve ser fornecida uma quantidade limite de catalisador no processo para que a temperatura da reação seja minimizada.
+
+TI0201 (temperatura na entrada da câmara 1) – PI0214 (pressão na saída da serpentina 1): a serpentina 1 está contida na câmara 1. Ambas estão contidas na seção
+de clivagem. Pressão e temperatura estão diretamente relacionadas. Esta relação tem sentido físico.
+
+TI0201 (temperatura na entrada da câmara 1) – PI0215 (pressão na saída da serpentina 2): ambas as variáveis estão contidas na etapa de reação, dentro dos reatores. A pressão na saída da serpentina 2 está relacionada com a pressão na saída da serpentina 1 que, por sua vez, tem influência da temperatura na entrada da câmara 1, como visto no item anterior.
+
+# Agrupamento das variáveis
+
+Ao final, as variáveis foram agrupadas em 4 grupos com distâncias similares. Os comandos para o agrupamento, para a geração do dendrograma e para o armazenamento da identificação dos grupos em uma variável (goups.var) podem ser vistos na Figura 11.
 
 
