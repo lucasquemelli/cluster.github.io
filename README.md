@@ -36,3 +36,14 @@ Foram testados 7 tipos de métodos, que podem ser vistos nas figuras abaixo (Den
 ![image](https://user-images.githubusercontent.com/81119854/124510655-ace80e00-ddaa-11eb-9b93-4a81f96770fa.png)
 ![image](https://user-images.githubusercontent.com/81119854/124510697-c426fb80-ddaa-11eb-8bde-74e3e4a0fa0f.png)
 
+![image](https://user-images.githubusercontent.com/81119854/124510933-41eb0700-ddab-11eb-9d66-65eb57392089.png)
+![image](https://user-images.githubusercontent.com/81119854/124510950-4e6f5f80-ddab-11eb-824c-e665bf852445.png)
+
+![image](https://user-images.githubusercontent.com/81119854/124510977-5fb86c00-ddab-11eb-9a8a-e799561ece97.png)
+![image](https://user-images.githubusercontent.com/81119854/124511009-71017880-ddab-11eb-914a-85a7000043af.png)
+
+![image](https://user-images.githubusercontent.com/81119854/124511029-7d85d100-ddab-11eb-877e-5f6585d2adc9.png)
+![image](https://user-images.githubusercontent.com/81119854/124511074-97bfaf00-ddab-11eb-974a-5fb43e2d4a55.png)
+
+
+
