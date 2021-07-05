@@ -52,4 +52,9 @@ O que pode ser concluído dessa análise é que determinados períodos possuem v
 
 Observações sequenciais em processos contínuos geralmente estão relacionadas (alta similaridade) se não há erro sistemático. Teria um sentido físico se, por exemplo, as observações fossem companhias diferentes (observação não contínua, diferentes conjuntos de dados).
 
+Embora a análise hierárquica não seja a melhor opção para este caso, foram escolhidos 4 grupos finais, com o propósito de comparação entre os métodos de agrupamento hierárquico. Normalmente, a continuação dessa análise é feita até que haja o agrupamento de todos grupos menores em um só grupo maior. Assim, o número de grupos é definido, graficamente, por screeplot ou por critério pessoal do analista com base em seus conhecimentos do processo.
+
+Ao comparar os dendrogramas da Figura 4, observa-se que os grupos selecionados por diferentes métodos, pelo critério de similaridade, são muito parecidos. Uma diferença que ocorreu foi no método de Ligação Singular (ou ligação única) que separou as observações de 32 ao 37 em dois grupos diferentes – essa sequência foi identificada como um único grupo nos demais métodos. Este resultado era esperado, porque esse método, às vezes, pode produzir clusters onde as observações em diferentes clusters estão mais próximas do que as observações em seus próprios clusters.
+
+# Clusterização não-hierárquica
 
