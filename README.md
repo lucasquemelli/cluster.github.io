@@ -21,6 +21,15 @@ Foi feita clusterização hierárquica para agrupar as observações em 4 grupos
 
 Foram testados 7 tipos de métodos, que podem ser vistos nas figuras abaixo (Dendrogramas das clusterizações hierárquicas). Apenas o método “ward.D2” não foi possível de ser utilizado.
 
+![image](https://user-images.githubusercontent.com/81119854/124510031-634af380-dda9-11eb-9308-9800e731e3d1.png)
+![image](https://user-images.githubusercontent.com/81119854/124510350-fd12a080-dda9-11eb-9406-dea1a740c596.png)
+
+![image](https://user-images.githubusercontent.com/81119854/124510276-d6ed0080-dda9-11eb-8791-f47e1c9d87b1.png)
 
 
+![image](https://user-images.githubusercontent.com/81119854/124510404-16b3e800-ddaa-11eb-99d0-266d583db877.png)
+![image](https://user-images.githubusercontent.com/81119854/124510328-ef5d1b00-dda9-11eb-85fe-57a46847a86f.png)
+
+![image](https://user-images.githubusercontent.com/81119854/124510526-61356480-ddaa-11eb-8228-c057a3867872.png)
+![image](https://user-images.githubusercontent.com/81119854/124510430-23384080-ddaa-11eb-8728-f096bd9cf7f1.png)
 
