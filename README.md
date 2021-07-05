@@ -21,6 +21,6 @@ Foi feita clusterização hierárquica para agrupar as observações em 4 grupos
 
 Foram testados 7 tipos de métodos, que podem ser vistos nas figuras abaixo (Dendrogramas das clusterizações hierárquicas). Apenas o método “ward.D2” não foi possível de ser utilizado.
 
-![image](https://user-images.githubusercontent.com/81119854/124509429-5679d000-dda8-11eb-8ce5-a51c658a7973.png)
+
 
 
