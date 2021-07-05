@@ -58,3 +58,20 @@ Ao comparar os dendrogramas da Figura 4, observa-se que os grupos selecionados p
 
 # Clusterização não-hierárquica
 
+Para a clusterização não-hierárquica, é necessário estabelecer um número de grupos. O código para determinação do número de grupos está localizado na figura abaixo. O gráfico gerado pelo código está presente adiante.
+
+![image](https://user-images.githubusercontent.com/81119854/124511708-27b22880-ddad-11eb-87cf-db5ef63ed139.png)
+![image](https://user-images.githubusercontent.com/81119854/124511779-503a2280-ddad-11eb-90e2-d6becc4a0f20.png)
+
+A determinação do número de grupos leva em consideração a variabilidade dentro dos grupos. A escolha é feita a partir de um número no gráfico que, após esse número, o aumento no número de cluster (grupos) não resulta em melhora significativa – representação pela reta tracejada, de cor vermelha, no valor de 400 para a soma dos quadrados dentro dos grupos. 
+
+Pela figura, pode ser concluído que o número de grupos é 3. Assim, foi feita a seleção dos grupos utilizando a função kmeans no R. O código no programa R pode ser visto abaixo:
+
+![image](https://user-images.githubusercontent.com/81119854/124511995-c3dc2f80-ddad-11eb-9fcc-be9eb03b43a0.png)
+
+Após a inserção do código de agrupamento, os grupos em cada variáveis foram organizados e exibidos na seção ‘adicionar clusters nas observações’. Os grupos com seus respectivos valores médios podem ser vistos abaixo:
+
+![image](https://user-images.githubusercontent.com/81119854/124512217-39480000-ddae-11eb-8c60-7b77ea4fcb77.png)
+
+
+
